@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ scrollPosition }) => {
     <header 
       className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl transition-all duration-300 rounded-2xl ${
         isScrolled 
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg' 
+          ? 'bg-white/80 dark:bg-gray-900/30 backdrop-blur-md shadow-lg' 
           : 'bg-transparent'
       }`}
     >

@@ -1,44 +1,54 @@
-import React from 'react';
-import TimelineItem from './TimelineItem';
-import { Trophy, Award, FileText, Star } from 'lucide-react';
+import React from "react";
+import TimelineItem from "./TimelineItem";
+import { Trophy, Award, FileText, Star, Users } from "lucide-react";
 
 const AchievementsTimeline: React.FC = () => {
   const achievements = [
     {
-      year: '2023',
-      title: 'National Innovation Award',
-      description: 'Recognized by the Bangladesh Innovation Authority for breakthrough technology in assistive devices.',
+      year: "2022",
+      title: "Khude Biggani Award Winner",
+      description:
+        "National champion on Deepto TV, recognized for developing affordable assistive technologies for people with disabilities in Bangladesh.",
       icon: <Trophy className="h-6 w-6" />,
-      imagePath: 'https://images.pexels.com/photos/8553862/pexels-photo-8553862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imagePath:
+        "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2022/07/04/khude_biggyani5.jpg",
     },
     {
-      year: '2023',
-      title: 'IEEE Conference Featured Research',
-      description: 'Our AI algorithm for wheelchair control was featured at the IEEE International Conference on Robotics and Automation.',
-      icon: <FileText className="h-6 w-6" />,
-      imagePath: 'https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-    },
-    {
-      year: '2024',
-      title: 'Asia MedTech Innovation Competition',
-      description: 'Gold Medal winner at the prestigious Asia-Pacific Medical Technology Innovation Competition.',
+      year: "2023",
+      title: "Bangabandhu Innovation Grant Winner",
+      description:
+        "Secured 10 lakh BDT national grant from the iDEA Project of ICT Division for building Bangladesh's first smart robotic wheelchair.",
       icon: <Award className="h-6 w-6" />,
-      imagePath: 'https://images.pexels.com/photos/8370425/pexels-photo-8370425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imagePath:
+        "https://images.pexels.com/photos/8370425/pexels-photo-8370425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      year: '2024',
-      title: 'WHO Recognition',
-      description: 'Endorsed by the World Health Organization as an exemplary innovation in accessible healthcare technology.',
+      year: "2024",
+      title: "Youth Co:Lab Springboard 7.0 Selection",
+      description:
+        "Selected among top social innovators in South Asia by UNDP and Citi Foundation for impact-driven assistive technology solutions.",
       icon: <Star className="h-6 w-6" />,
-      imagePath: 'https://images.pexels.com/photos/3952034/pexels-photo-3952034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imagePath:
+        "https://www.tbsnews.net/sites/default/files/styles/very_big_1/public/images/2025/03/24/img-20250324-wa0018.jpg",
     },
     {
-      year: '2025',
-      title: 'Global Accessibility Award',
-      description: 'Received the Global Accessibility Innovation Award for making mobility solutions accessible to diverse populations.',
-      icon: <Award className="h-6 w-6" />,
-      imagePath: 'https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-    }
+      year: "2025",
+      title: "1500+ Lives Impacted Across Bangladesh",
+      description:
+        "Empowering people with disabilities through smart wheelchairs, robotic aids, and community-driven awareness programs.",
+      icon: <Users className="h-6 w-6" />,
+      imagePath:
+        "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    },
+    {
+      year: "2025",
+      title: "National & International Robotics Champion",
+      description:
+        "Recognized 4x as national champion, 2x runner-up, and 1x international robotics winner for leadership in educational robotics innovation.",
+      icon: <FileText className="h-6 w-6" />,
+      imagePath:
+        "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    },
   ];
 
   return (
@@ -49,17 +59,18 @@ const AchievementsTimeline: React.FC = () => {
             Our Achievements Journey
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            Celebrating milestones and recognition in our mission to revolutionize mobility solutions.
+            Celebrating milestones and recognition in our mission to
+            revolutionize mobility solutions.
           </p>
         </div>
 
         <div className="relative">
           {/* Timeline Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-purple-600 to-indigo-500 rounded-full hidden md:block"></div>
-          
+
           <div className="space-y-12">
             {achievements.map((achievement, index) => (
-              <TimelineItem 
+              <TimelineItem
                 key={index}
                 year={achievement.year}
                 title={achievement.title}
@@ -75,13 +86,16 @@ const AchievementsTimeline: React.FC = () => {
         <div className="mt-20 text-center">
           <div className="inline-block p-1 bg-gradient-to-r from-purple-600 to-indigo-500 rounded-xl">
             <div className="bg-white dark:bg-gray-800 rounded-lg px-8 py-6">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Join Our Journey of Innovation</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                Join Our Journey of Innovation
+              </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                We're constantly pushing the boundaries of what's possible in assistive technology. 
-                Stay tuned for more groundbreaking developments in our mission to enhance mobility.
+                We're constantly pushing the boundaries of what's possible in
+                assistive technology. Stay tuned for more groundbreaking
+                developments in our mission to enhance mobility.
               </p>
-              <a 
-                href="#vision" 
+              <a
+                href="#vision"
                 className="px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block"
               >
                 See Our Vision

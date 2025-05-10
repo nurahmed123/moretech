@@ -3,6 +3,9 @@ import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import FeaturesShowcase from './components/FeaturesShowcase';
+import SmartControls from './components/SmartControls';
+import ProductShowcase from './components/ProductShowcase';
+import OurStory from './components/OurStory';
 import AchievementsTimeline from './components/AchievementsTimeline';
 import FutureVision from './components/FutureVision';
 import Contact from './components/Contact';
@@ -41,6 +44,7 @@ function App() {
 
   return (
     <ThemeProvider>
+      <link rel="icon" href="https://files.edgestore.dev/iz2sept3369gmc0f/publicFiles/_public/560b1ad9-dd9e-4458-a6e3-a2878525f718.png" />
       <div className="min-h-screen transition-colors duration-300">
         <AnimatePresence>
           {loading && <LoadingScreen progress={progress} />}
@@ -49,6 +53,9 @@ function App() {
         <main>
           <Hero />
           <FeaturesShowcase />
+          <SmartControls />
+          <ProductShowcase />
+          <OurStory />
           <AchievementsTimeline />
           <FutureVision />
           <Contact />
