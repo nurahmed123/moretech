@@ -20,7 +20,7 @@ const AchievementsTimeline: React.FC = () => {
         "Secured 10 lakh BDT national grant from the iDEA Project of ICT Division for building Bangladesh's first smart robotic wheelchair.",
       icon: <Award className="h-6 w-6" />,
       imagePath:
-        "https://images.pexels.com/photos/8370425/pexels-photo-8370425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ae6a702855efbb3074cd04117a8a7f325cbda9c7_1688271302214.jpeg",
     },
     {
       year: "2024",

@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-purple-600/10 to-indigo-500/10 dark:from-purple-600/20 dark:to-indigo-500/20 p-4 sm:p-8 shadow-xl transform rotate-1 hover:rotate-0 transition-all duration-500">
               <img 
-                src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5a2007e974a33debd17c0937875a0ff14522529e_screenshot_2025-05-10_at_9.07.27___pm.png" 
+                src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/6570c09670395fd65b52c39f5f28087eaa66d8fa_img-20250407-wa0007.jpg" 
                 alt="AI-Powered Smart Wheelchair" 
                 className="rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 transition-all duration-500 w-full max-w-md mx-auto"
               />
