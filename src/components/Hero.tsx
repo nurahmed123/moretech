@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-purple-600/10 to-indigo-500/10 dark:from-purple-600/20 dark:to-indigo-500/20 p-4 sm:p-8 shadow-xl transform rotate-1 hover:rotate-0 transition-all duration-500">
               <img 
-                src="https://images.pexels.com/photos/3768114/pexels-photo-3768114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5a2007e974a33debd17c0937875a0ff14522529e_screenshot_2025-05-10_at_9.07.27___pm.png" 
                 alt="AI-Powered Smart Wheelchair" 
                 className="rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 transition-all duration-500 w-full max-w-md mx-auto"
               />
@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
               </div>
               
               <div className="absolute bottom-4 right-4 bg-white dark:bg-gray-800 rounded-lg px-3 py-1 text-xs font-semibold text-purple-600 dark:text-purple-400 shadow-md">
-                AI Powered
+                Moretechbd
               </div>
             </div>
           </div>
