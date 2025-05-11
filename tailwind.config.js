@@ -50,11 +50,35 @@ export default {
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
+        fadeOut: 'fadeOut 0.8s forwards',
+        ripple: 'rippleEffect 0.8s ease-out forwards',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-20px)' },
+        },
+        fadeOut: {
+          'from': {
+            opacity: '0.8',
+            transform: 'scale(0.8)',
+          },
+          'to': {
+            opacity: '0',
+            transform: 'scale(0.3)',
+          },
+        },
+        rippleEffect: {
+          '0%': {
+            width: '0',
+            height: '0',
+            opacity: '0.8',
+          },
+          '100%': {
+            width: '100px',
+            height: '100px',
+            opacity: '0',
+          },
         },
       },
     },
