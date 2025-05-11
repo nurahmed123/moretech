@@ -79,16 +79,6 @@ const FeaturesShowcase: React.FC = () => {
                 <p className="text-gray-700 dark:text-gray-300">
                   {feature.description}
                 </p>
-                
-                <a 
-                  href="#story" 
-                  className="mt-6 flex items-center text-purple-600 dark:text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                >
-                  <span className="text-sm font-medium">Learn more</span>
-                  <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
               </div>
             </div>
           ))}
