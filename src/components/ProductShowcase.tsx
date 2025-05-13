@@ -104,7 +104,7 @@ const ProductShowcase: React.FC = () => {
                 Buy Now
               </button>
               <button className="px-6 py-3 border-2 border-purple-600 dark:border-purple-400 text-purple-600 dark:text-purple-400 font-medium rounded-lg hover:bg-purple-600/10 transition-colors duration-300">
-                <a href="#details">Learn More</a>
+                <a href="#story">Learn More</a>
               </button>
             </div>
           </div>
