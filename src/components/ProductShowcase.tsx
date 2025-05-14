@@ -58,7 +58,8 @@ const ProductShowcase: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden">
               {/* Replace src with your actual wheelchair image */}
               <img
-                src="https://cdn.hack.ngo/slackcdn/66e360c0620a4f562a7cbd73156c5ca5.png"
+                // src="https://cdn.hack.ngo/slackcdn/66e360c0620a4f562a7cbd73156c5ca5.png"
+                src="https://cdn.hack.ngo/slackcdn/f293df881b0f552303721853f0a199f3.png"
                 alt="RoboAid Smart Wheelchair"
                 className="w-full rounded-2xl shadow-lg"
               />
