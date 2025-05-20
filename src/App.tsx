@@ -58,7 +58,7 @@ function App() {
           <Hero />
           <FeaturesShowcase />
           <SmartControls />
-          <ProductShowcase />
+          {/* <ProductShowcase /> */}
           <OurProduct/>
           <OurStory />
           <AchievementsTimeline />
