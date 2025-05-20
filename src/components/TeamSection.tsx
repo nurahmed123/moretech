@@ -39,6 +39,16 @@ const TeamSection: React.FC = () => {
       }
     },
     {
+      name: "Anamika Monalisa",
+      role: "Co founder & cmo",
+      description: "architects and amplifies our brand story—transforming data-driven insights into viral campaigns that scale user engagement. Her mastery of digital marketing and partnership-building ensures More Tech Bangladesh's mission reaches every corner of Bangladesh and beyond.",
+      image: "https://cdn.hack.ngo/slackcdn/be835ed31b33c377ee2f003011347083.jpeg",
+      socials: {
+        linkedin: "",
+        email: ""
+      }
+    },
+    {
       name: "Chandan Kumar Mondal",
       role: "Lead Research Advisor",
       description: "A distinguished academic and senior researcher at Khulna University, Mr. Mondal brings over 15 years of expertise in robotics, embedded intelligence, and adaptive systems.",
@@ -56,16 +66,6 @@ const TeamSection: React.FC = () => {
       socials: {
         linkedin: "https://linkedin.com/in/dr-nahid",
         email: "nahid@moretechbd.com"
-      }
-    },
-    {
-      name: "Anamika Monalisa",
-      role: "Co founder & cmo",
-      description: "Anamika Monalisa drives partnerships and operations at More Tech Bangladesh, turning visionary prototypes into real-world impact on time and on budget.",
-      image: "https://cdn.hack.ngo/slackcdn/be835ed31b33c377ee2f003011347083.jpeg",
-      socials: {
-        linkedin: "",
-        email: ""
       }
     },
   ];
