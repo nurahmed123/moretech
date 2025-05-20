@@ -57,7 +57,17 @@ const TeamSection: React.FC = () => {
         linkedin: "https://linkedin.com/in/dr-nahid",
         email: "nahid@moretechbd.com"
       }
-    }
+    },
+    {
+      name: "Anamika Monalisa",
+      role: "Co founder & cmo",
+      description: "Anamika Monalisa drives partnerships and operations at More Tech Bangladesh, turning visionary prototypes into real-world impact on time and on budget.",
+      image: "https://cdn.hack.ngo/slackcdn/be835ed31b33c377ee2f003011347083.jpeg",
+      socials: {
+        linkedin: "",
+        email: ""
+      }
+    },
   ];
 
   const containerVariants = {

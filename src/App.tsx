@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import WaterCursor from './components/WaterCursor';
 import { ThemeProvider } from './context/ThemeContext';
+import OurProduct from './components/OurProduct';
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -58,6 +59,7 @@ function App() {
           <FeaturesShowcase />
           <SmartControls />
           <ProductShowcase />
+          <OurProduct/>
           <OurStory />
           <AchievementsTimeline />
           <FutureVision />

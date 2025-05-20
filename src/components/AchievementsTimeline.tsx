@@ -5,13 +5,13 @@ import { Trophy, Award, FileText, Star, Users } from "lucide-react";
 const AchievementsTimeline: React.FC = () => {
   const achievements = [
     {
-      year: "2022",
-      title: "Khude Biggani Award Winner",
+      year: "2025",
+      title: "Bangladesh Investment Summit 2025",
       description:
-        "National champion on Deepto TV, recognized for developing affordable assistive technologies for people with disabilities in Bangladesh.",
+        "RoboAid (More Tech Bangladesh) has been selected among the top 30 startups from all over Bangladesh to pitch at the Bangladesh Investment Summit 2025 — where we had the opportunity to present our startup directly to Nobel Laureate Dr. Muhammad Yunus, alongside 600+ investors from over 50+ countries.",
       icon: <Trophy className="h-6 w-6" />,
       imagePath:
-        "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2022/07/04/khude_biggyani5.jpg",
+        "https://cdn.hack.ngo/slackcdn/a851ef9407d18b1dd4ef52a5d945baed.jpg",
     },
     {
       year: "2023",
