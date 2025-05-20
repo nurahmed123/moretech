@@ -59,6 +59,16 @@ const TeamSection: React.FC = () => {
       }
     },
     {
+      name: "Md Nur Ahmad",
+      role: "",
+      description: "",
+      image: "https://cdn.hack.ngo/slackcdn/84e033e65c0d7f1968c8f04fdd8efb76.jpeg",
+      socials: {
+        linkedin: "https://linkedin.com/in/06nurahmed",
+        email: "06nurahmed@gmail.com"
+      }
+    },
+    {
       name: "Dr. Md. Nahid Haider",
       role: "Medical Advisor",
       description: "Currently pursuing his MBBS at Satkhira Medical College, Dr. Nahid offers a unique clinical perspective that strengthens the medical relevance of our innovations.",
