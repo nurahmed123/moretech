@@ -20,7 +20,7 @@ const TeamSection: React.FC = () => {
       name: "Sapnil Sultana Bizle",
       role: "Founder & CEO",
       description: "Oversees day-to-day operations, partner coordination, and community engagement at MORE TECH BD.",
-      image: "https://cdn.hack.ngo/slackcdn/7a7358eba660575b48e6e8c7e31ecf3d.png",
+      image: "https://cdn.hack.ngo/slackcdn/9dffc26cdb1c8ee82d940ff90f3ca5a9.png",
       socials: {
         linkedin: "https://linkedin.com/in/sapnil-sultana",
         twitter: "https://twitter.com/sapnilsultana",
