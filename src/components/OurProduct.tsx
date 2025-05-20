@@ -1,4 +1,6 @@
 import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 interface Feature {
   title: string;
@@ -40,7 +42,7 @@ const features: Feature[] = [
   {
     title: "Heart Rate Measurement System",
     image: "https://cdn.hack.ngo/slackcdn/a09e1d74eb39490fcf3d639a9dac1a4c.png",
-    description: "Monitors the user’s pulse in real time to provide continuous feedback on exertion levels and detect irregularities for proactive health management."
+    description: "Monitors the user's pulse in real time to provide continuous feedback on exertion levels and detect irregularities for proactive health management."
   },
   {
     title: "Blood Pressure Monitoring System",
@@ -54,39 +56,108 @@ const features: Feature[] = [
   }
 ];
 
+const FeatureCard: React.FC<{ feature: Feature }> = ({ feature }) => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+    triggerOnce: false
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="h-screen w-full flex items-center justify-center snap-center"
+      initial={{ opacity: 0, scale: 0.8, rotateX: 45 }}
+      animate={inView ? { 
+        opacity: 1, 
+        scale: 1, 
+        rotateX: 0,
+        transition: { 
+          duration: 0.8,
+          ease: [0.16, 1, 0.3, 1]
+        }
+      } : {
+        opacity: 0,
+        scale: 0.8,
+        rotateX: 45,
+        transition: { 
+          duration: 0.4,
+          ease: [0.16, 1, 0.3, 1]
+        }
+      }}
+      style={{ perspective: 1000 }}
+    >
+      <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform-gpu">
+          <div className="relative aspect-[16/9] overflow-hidden">
+            <motion.img
+              src={feature.image}
+              alt={feature.title}
+              className="w-full h-full object-cover"
+              initial={{ scale: 1.2 }}
+              animate={inView ? { 
+                scale: 1,
+                transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] }
+              } : {}}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          </div>
+          
+          <div className="p-8">
+            <motion.h3 
+              className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-500"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { 
+                opacity: 1, 
+                y: 0,
+                transition: { delay: 0.2, duration: 0.6 }
+              } : {}}
+            >
+              {feature.title}
+            </motion.h3>
+            
+            <motion.p 
+              className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { 
+                opacity: 1, 
+                y: 0,
+                transition: { delay: 0.4, duration: 0.6 }
+              } : {}}
+            >
+              {feature.description}
+            </motion.p>
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 const OurProduct: React.FC = () => {
   return (
-    <section id="our-products" className="py-20 bg-white dark:bg-gray-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {features.map((feature, index) => {
-          const isEven = index % 2 === 0;
-          const textOrder = isEven ? 'order-2 lg:order-1' : 'order-2 lg:order-2';
-          const imageOrder = isEven ? 'order-1 lg:order-2' : 'order-1 lg:order-1';
+    <section className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+        <motion.div
+          className="h-screen flex items-center justify-center snap-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="text-center px-4">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-500">
+              Revolutionary Features
+            </h2>
+            <p className="text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+              Experience the future of mobility with our cutting-edge smart wheelchair technology
+            </p>
+          </div>
+        </motion.div>
 
-          return (
-            <div key={index} className="flex flex-col lg:flex-row items-center gap-12 mb-16">
-              <div className={`${textOrder} lg:w-1/2`}>  
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-500">
-                  {feature.title}
-                </h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300">
-                  {feature.description}
-                </p>
-              </div>
-
-              <div className={`${imageOrder} lg:w-1/2`}>  
-                <div className="relative">
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="rounded-2xl shadow-lg"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-indigo-500/20 rounded-2xl" />
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        <AnimatePresence>
+          {features.map((feature, index) => (
+            <FeatureCard key={index} feature={feature} />
+          ))}
+        </AnimatePresence>
       </div>
     </section>
   );

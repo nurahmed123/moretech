@@ -42,3 +42,20 @@ a, button {
 .animate-ripple {
     animation: rippleEffect 0.8s ease-out forwards;
 }
+
+/* Smooth scrolling for snap points */
+.snap-mandatory {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+.snap-mandatory::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure smooth transitions */
+.snap-center {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
