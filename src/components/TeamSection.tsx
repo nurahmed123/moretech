@@ -41,7 +41,7 @@ const TeamSection: React.FC = () => {
     {
       name: "Anamika Monalisa",
       role: "Co founder & cmo",
-      description: "architects and amplifies our brand story—transforming data-driven insights into viral campaigns that scale user engagement. Her mastery of digital marketing and partnership-building ensures More Tech Bangladesh's mission reaches every corner of Bangladesh and beyond.",
+      description: "Architects and amplifies our brand story—transforming data-driven insights into viral campaigns that scale user engagement. Her mastery of digital marketing and partnership-building ensures More Tech Bangladesh's mission reaches every corner of Bangladesh and beyond.",
       image: "https://cdn.hack.ngo/slackcdn/be835ed31b33c377ee2f003011347083.jpeg",
       socials: {
         linkedin: "",
