@@ -47,7 +47,7 @@ const AchievementsTimeline: React.FC = () => {
         "Recognized 4x as national champion, 2x runner-up, and 1x international robotics winner for leadership in educational robotics innovation.",
       icon: <FileText className="h-6 w-6" />,
       imagePath:
-        "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://cdn.hack.ngo/slackcdn/14f3efe73e573be9c3cbfb984f0f2481.jpg",
     },
   ];
 
