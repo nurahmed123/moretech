@@ -58,16 +58,16 @@ const TeamSection: React.FC = () => {
         email: "chandan@moretechbd.com"
       }
     },
-    {
-      name: "Md Nur Ahmad",
-      role: "",
-      description: "",
-      image: "https://cdn.hack.ngo/slackcdn/84e033e65c0d7f1968c8f04fdd8efb76.jpeg",
-      socials: {
-        linkedin: "https://linkedin.com/in/06nurahmed",
-        email: "06nurahmed@gmail.com"
-      }
-    },
+    // {
+    //   name: "Md Nur Ahmad",
+    //   role: "",
+    //   description: "",
+    //   image: "https://cdn.hack.ngo/slackcdn/84e033e65c0d7f1968c8f04fdd8efb76.jpeg",
+    //   socials: {
+    //     linkedin: "https://linkedin.com/in/06nurahmed",
+    //     email: "06nurahmed@gmail.com"
+    //   }
+    // },
     {
       name: "Dr. Md. Nahid Haider",
       role: "Medical Advisor",
