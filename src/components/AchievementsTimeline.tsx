@@ -38,7 +38,7 @@ const AchievementsTimeline: React.FC = () => {
         "Empowering people with disabilities through smart wheelchairs, robotic aids, and community-driven awareness programs.",
       icon: <Users className="h-6 w-6" />,
       imagePath:
-        "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://cdn.hack.ngo/slackcdn/4700f111afd9db6c10f11805015336d8.jpg",
     },
     {
       year: "2025",
